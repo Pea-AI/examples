@@ -10,7 +10,6 @@ export default function Home() {
     questId: '66a1f3e190b5a80011addd40',
     token: `eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2Njc1NDhkYzlmYTNkMDAwMTE1NWI3NDEiLCJpYXQiOjE3MjE4OTI2MjIsImV4cCI6MTcyNDQ4NDYyMn0.7fv0mh3Lfv6utnMFwV9KAyaAvLK54QpsKsT9cM5HCZo`,
     theme: 'dark',
-    features: [],
   })
 
   return (
@@ -49,11 +48,7 @@ export default function Home() {
               Community
             </Typography.Title>
             <div className="rounded-2xl border border-[#2A2A2A] bg-[#151617] w-96 mt-6 overflow-hidden">
-              <Community
-                handle="bevm"
-                theme={values.theme}
-                features={values.features}
-              />
+              <Community handle="bevm" theme={values.theme} />
             </div>
           </div>
 
