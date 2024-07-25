@@ -7,9 +7,10 @@ import '@pea-ai/growth-sdk/dist/style.css'
 
 export default function Home() {
   const [values, setValues] = useState({
-    questId: '66a1f3e190b5a80011addd40',
+    questId: '66a2427aefe7f900111f0a74',
     token: `eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2Njc1NDhkYzlmYTNkMDAwMTE1NWI3NDEiLCJpYXQiOjE3MjE4OTI2MjIsImV4cCI6MTcyNDQ4NDYyMn0.7fv0mh3Lfv6utnMFwV9KAyaAvLK54QpsKsT9cM5HCZo`,
     theme: 'dark',
+    handle: 'bevm',
   })
 
   return (
@@ -27,6 +28,9 @@ export default function Home() {
               setValues(allValues)
             }}
           >
+            <Form.Item label="Handle" name="handle">
+              <Input />
+            </Form.Item>
             <Form.Item label="Quest ID" name="questId">
               <Input />
             </Form.Item>
@@ -48,7 +52,7 @@ export default function Home() {
               Community
             </Typography.Title>
             <div className="rounded-2xl border border-[#2A2A2A] bg-[#151617] w-96 mt-6 overflow-hidden">
-              <Community handle="bevm" theme={values.theme} />
+              <Community handle={values.handle} theme={values.theme} />
             </div>
           </div>
 
