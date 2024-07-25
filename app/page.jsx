@@ -2,8 +2,8 @@
 
 import { useState } from 'react'
 import { ConfigProvider, Form, Input, Radio, theme, Typography } from 'antd'
-import { TaskList, Community } from 'pea-ai-frontend'
-import 'pea-ai-frontend/dist/style.css'
+import { TaskList, Community } from '@pea-ai/growth-sdk'
+import '@pea-ai/growth-sdk/dist/style.css'
 
 export default function Home() {
   const [values, setValues] = useState({
